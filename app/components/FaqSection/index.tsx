@@ -46,7 +46,7 @@ export default function FaqSection() {
           <div className="w-full border-b-2 border-black"></div>
 
           {Question.map((item) => (
-            <div className="flex flex-col gap-5">
+            <div key={item.id} className="flex flex-col gap-5">
               <div className="flex justify-between items-center">
                 <h5 className="lg:text-2xl text-xl font-bold">
                   {item.question}

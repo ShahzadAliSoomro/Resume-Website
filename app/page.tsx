@@ -5,6 +5,7 @@ import Webflow from './components/Webflow'
 import ProvidingSection from './components/ProvidingSection'
 import GovtContract from './components/GovtContract'
 import FaqSection from './components/FaqSection'
+import TeamSection from './components/TeamSection'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Webflow />
       <ProvidingSection />
       <FaqSection />
+      <TeamSection />
       <div>
         <GovtContract />
       </div>
