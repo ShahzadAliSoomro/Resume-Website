@@ -1,6 +1,7 @@
 import Hero from './components/Hero'
 import FeatureSection from './components/FeatureSection'
 import SpecializingGovt from './components/SpecializingGovt'
+import Webflow from './components/Webflow'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
     <div className='mt-24'>
       <FeatureSection />
       <SpecializingGovt />
+      <Webflow />
     </div>
     
    </div>
