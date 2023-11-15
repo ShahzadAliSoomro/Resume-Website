@@ -1,5 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 
 export default function ProvidingSection() {
   return (
@@ -16,15 +16,15 @@ export default function ProvidingSection() {
               <p className="text-sm w-full lg:w-8/12">
                 {`With a proven track record in government contracting, our team delivers innovative software development and cybersecurity solutions that meet the unique needs of government agencies.`}
               </p>
-              <div className='flex flex-col lg:flex-row gap-5 pt-7'>
-                <div className='flex flex-col gap-2'>
-                    <h1 className='text-4xl font-bold'>50%  Success</h1>
-                    <p className='text-sm w-10/12'>{`Delivering Results that Exceed Expectations and Drive Mission Success`}</p>
+              <div className="flex flex-col lg:flex-row gap-5 pt-7">
+                <div className="flex flex-col gap-2">
+                  <h1 className="text-4xl font-bold">50% Success</h1>
+                  <p className="text-sm w-10/12">{`Delivering Results that Exceed Expectations and Drive Mission Success`}</p>
                 </div>
-                <div className='flex flex-col gap-2'>
-                    <h1 className='text-4xl font-bold'>50% </h1>
-                    <h1 className='text-4xl font-bold'>Satisfaction</h1>
-                    <p className='text-sm w-10/12'>{`Building Trusted Partnerships for Long-Term Success in Government Contracting`}</p>
+                <div className="flex flex-col gap-2">
+                  <h1 className="text-4xl font-bold">50% </h1>
+                  <h1 className="text-4xl font-bold">Satisfaction</h1>
+                  <p className="text-sm w-10/12">{`Building Trusted Partnerships for Long-Term Success in Government Contracting`}</p>
                 </div>
               </div>
             </div>
@@ -43,5 +43,5 @@ export default function ProvidingSection() {
         </div>
       </div>
     </div>
-  )
+  );
 }
