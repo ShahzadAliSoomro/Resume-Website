@@ -1,5 +1,6 @@
 import Hero from './components/Hero'
 import FeatureSection from './components/FeatureSection'
+import SpecializingGovt from './components/SpecializingGovt'
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
     <Hero />
     <div className='mt-24'>
       <FeatureSection />
-      
+      <SpecializingGovt />
     </div>
     
    </div>
