@@ -16,12 +16,12 @@ export default function Home() {
       <SpecializingGovt />
       <Webflow />
       <ProvidingSection />
-      <FaqSection />
-      <TeamSection />
+      
       <div>
         <GovtContract />
       </div>
-      
+      <FaqSection />
+      <TeamSection />
      
     </div>
     
