@@ -2,6 +2,7 @@ import Hero from './components/Hero'
 import FeatureSection from './components/FeatureSection'
 import SpecializingGovt from './components/SpecializingGovt'
 import Webflow from './components/Webflow'
+import ProvidingSection from './components/ProvidingSection'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <FeatureSection />
       <SpecializingGovt />
       <Webflow />
+      <ProvidingSection />
     </div>
     
    </div>
