@@ -19,7 +19,7 @@ export default function Navbar() {
                         <Link href='/'>About Us</Link>
                     </div>
                     <div>
-                        <Link href='/'>Services</Link>
+                        <Link href='/services'>Services</Link>
                     </div>
                     <div className='flex gap-1 justify-center items-center'>
                         <Link href='/'>About Us</Link>
