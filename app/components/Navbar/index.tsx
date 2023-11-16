@@ -6,6 +6,11 @@ import { IoMenuOutline } from "react-icons/io5";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
+
+    const handleLinkClick = () => {
+        setOpen(false);
+      }
+
   return (
     <div className='w-full bg-white'>
         <div className='container mx-auto'>
@@ -37,13 +42,13 @@ export default function Navbar() {
               {open && (
                     <div className='md:hidden gap-5 flex flex-col text-white bg-black p-5 w-full absolute top-[66px] left-0 z-50'>
                     <div>
-                        <Link href='/'>About Us</Link>
+                        <Link href='/' onClick={handleLinkClick}>About Us</Link>
                     </div>
                     <div>
-                        <Link href='/'>Services</Link>
+                        <Link href='/services' onClick={handleLinkClick}>Services</Link>
                     </div>
                     <div className='flex gap-1 items-center'>
-                        <Link href='/'>About Us</Link>
+                        <Link href='/' onClick={handleLinkClick}>About Us</Link>
                         <IoIosArrowDown />
                     </div>
                 </div>
