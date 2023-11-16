@@ -11,12 +11,12 @@ export default function GovtContract() {
             alt="resume"
             width={1200}
             height={1200}
-            className="w-full lg:h-[100vh] h-[90vh] object-center"
+            className="w-full 2xl:h-[100vh] xl:h-[100vh] lg:h-[100vh] md:h-[60vh] h-[90vh] object-center"
           />
         </div>
       </div>
 
-      <div className="w-full container mx-auto lg:pt-32 pt-20 p-5">
+      <div className="w-full container mx-auto lg:pt-32 pt-10 p-5">
         <div className="flex flex-col gap-5 pt-20 flex-wrap lg:flex-nowrap">
           <div className="w-full lg:w-8/12 ">
             <h1 className="lg:text-7xl text-5xl font-bold">

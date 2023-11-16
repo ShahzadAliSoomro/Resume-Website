@@ -32,9 +32,9 @@ const Question = [
 export default function FaqSection() {
   return (
     <div className="w-full p-5">
-      <div className="container mx-auto lg:pt-32 p-0">
+      <div className="container mx-auto pt-32">
         <div className="flex flex-col gap-7 pt-5">
-          <div className="flex flex-col gap-5 lg:pt-20 pt-0">
+          <div className="flex flex-col gap-5 lg:pt-20 pt-10">
             <h1 className="lg:text-5xl text-3xl font-bold">
               Frequently Asked Questions
             </h1>
