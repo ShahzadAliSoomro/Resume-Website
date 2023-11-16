@@ -5,8 +5,8 @@ export default function ProvidingSection() {
   return (
     <div className="w-full p-5">
       <div className="container mx-auto">
-        <div className="w-full pt-20">
-          <div className="flex justify-between gap-5 lg:gap-0 pt-20 items-center flex-wrap lg:flex-nowrap">
+        <div className="w-full lg:pt-20 pt-0">
+          <div className="flex justify-between gap-5 lg:gap-0 lg:pt-20 pt-10 items-center flex-wrap lg:flex-nowrap">
             <div className="w-full lg:w-6/12 flex flex-col gap-5 ">
               <div className="w-full lg:w-10/12">
                 <h2 className="lg:text-4xl text-2xl font-bold leading-10">

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function GovtContract() {
   return (
     <div className="w-full">
-      <div className="relative pt-32">
+      <div className="relative lg:pt-32 pt-0">
         <div className="pt-20 absolute w-full bg-transparent opacity-30 overflow-hidden">
           <Image
             src="/hero2.jpg"

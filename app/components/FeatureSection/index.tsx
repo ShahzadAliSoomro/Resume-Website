@@ -31,9 +31,9 @@ const FeatureCard = [
 export default function FeatureSection() {
   return (
     <div className="w-full p-5">
-      <div className="container mx-auto pt-10">
+      <div className="container mx-auto lg:pt-10 pt-0">
         <div className="">
-          <h2 className="text-4xl text-center font-bold mb-10">
+          <h2 className="lg:text-4xl text-2xl text-center font-bold mb-10">
             Custom Software Development
           </h2>
         </div>

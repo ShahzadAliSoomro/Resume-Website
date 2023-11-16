@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Webflow() {
   return (
     <div className="w-full p-5">
-      <div className="container mx-auto pt-20">
-        <div className="flex flex-col justify-center items-center gap-5 pt-20">
+      <div className="container mx-auto lg:pt-20 pt-0">
+        <div className="flex flex-col justify-center items-center gap-5 lg:pt-20 pt-10">
           <div className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ export default function Webflow() {
             </svg>
           </div>
           <div className="w-full lg:w-6/12 flex justify-center items-center">
-            <h4 className="text-2xl font-bold text-center">{`Working with this company has been a game-changer for our government projects. Their expertise in software development and cybersecurity has helped us achieve our goals efficiently and securely.`}</h4>
+            <h4 className="lg:text-2xl text-xl font-bold text-center">{`Working with this company has been a game-changer for our government projects. Their expertise in software development and cybersecurity has helped us achieve our goals efficiently and securely.`}</h4>
           </div>
           <div className="flex flex-col gap-3 justify-center items-center">
             <div className="relative w-12 h-12 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
