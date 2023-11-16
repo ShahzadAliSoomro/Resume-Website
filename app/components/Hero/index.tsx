@@ -13,7 +13,7 @@ export default function Hero() {
           className="w-full lg:h-[60vh] h-[15vh] object-center"
         />
       </div>
-      <div className="w-full container mx-auto ">
+      <div className="w-full container mx-auto p-5">
         <div className="flex justify-between gap-5 pt-20 flex-wrap lg:flex-nowrap">
           <div className="w-full lg:w-6/12 ">
             <h1 className="lg:text-7xl text-5xl font-bold">
