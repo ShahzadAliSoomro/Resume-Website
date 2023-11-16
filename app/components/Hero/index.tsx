@@ -10,7 +10,7 @@ export default function Hero() {
           alt="resume"
           width={1200}
           height={1200}
-          className="w-full lg:h-[60vh] h-[15vh] object-center"
+          className="w-full lg:h-[60vh] h-[32vh] object-center"
         />
       </div>
       <div className="w-full container mx-auto p-5">

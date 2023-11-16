@@ -35,7 +35,7 @@ export default function Navbar() {
               </div>
               {/* /// Navbar mobile screen content /// */}
               {open && (
-                    <div className='md:hidden gap-5 flex flex-col text-white bg-black p-5'>
+                    <div className='md:hidden gap-5 flex flex-col text-white bg-black p-5 w-full absolute top-[66px] left-0 z-50'>
                     <div>
                         <Link href='/'>About Us</Link>
                     </div>
