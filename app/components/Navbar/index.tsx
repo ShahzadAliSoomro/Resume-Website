@@ -27,7 +27,7 @@ export default function Navbar() {
                         <Link href='/services'>Services</Link>
                     </div>
                     <div className='flex gap-1 justify-center items-center'>
-                        <Link href='/'>About Us</Link>
+                        <Link href='/'>Solutions</Link>
                         <IoIosArrowDown />
                     </div>
                 </div>
@@ -48,7 +48,7 @@ export default function Navbar() {
                         <Link href='/services' onClick={handleLinkClick}>Services</Link>
                     </div>
                     <div className='flex gap-1 items-center'>
-                        <Link href='/' onClick={handleLinkClick}>About Us</Link>
+                        <Link href='/' onClick={handleLinkClick}>Solutions</Link>
                         <IoIosArrowDown />
                     </div>
                 </div>
