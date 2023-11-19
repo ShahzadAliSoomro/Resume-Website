@@ -5,29 +5,35 @@ const CaseStudyData = [
     id: 1,
     title: "Case Study Header Section",
     description:
-      "Introduce the case studies section with a compelling overview, highlighting the impact of the companys work in software development and cybersecurity within the government sector.",
+      "Introduce the case study with a compelling headline that summarizes the project's success.",
   },
   {
     id: 2,
-    title: "Case Study List Section",
+    title: "Case Study Body Section",
     description:
-      "List various case studies showcasing successful projects, detailing the challenges, solutions, and results of each engagement.",
+      "Detail the client's challenges, the solutions provided, and the outcomes of the project, including specific benefits and improvements.",
   },
   {
     id: 3,
-    title: "CTA Section",
+    title: "Testimonial Section",
     description:
-      "Include a call-to-action that invites visitors to contact the company for more detailed discussions or to start a new project.",
+      "Include a testimonial from the client featured in the case study to add authenticity and trust.",
   },
   {
     id: 4,
-    title: "FAQ Section",
+    title: "Stats Section",
     description:
-      "Provide answers to frequently asked questions regarding the case studies, methodologies, and the benefits of choosing the companys services for government contracts.",
+      "Showcase measurable results from the case study with relevant statistics and data visualizations.",
+  },
+  {
+    id: 5,
+    title: "CTA Section",
+    description:
+      "Prompt readers to contact the company for similar solutions or to learn more about their services in software development and cybersecurity.",
   },
 ];
 
-export default function CaseStudies() {
+export default function CaseStudy() {
   return (
     <div className="w-full p-5">
       <div className="container mx-auto">
