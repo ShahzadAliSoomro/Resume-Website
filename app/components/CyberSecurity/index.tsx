@@ -1,6 +1,6 @@
 import React from 'react'
 
-const softwareData = [
+const CyberData = [
     {
         id: 1,
         title: 'CTA Section',
@@ -54,7 +54,7 @@ export default function CyberSecurity() {
     <div className="w-full p-5">
         <div className='container mx-auto'>
             <div className='flex flex-col gap-20'>
-                {softwareData.map((item) => (
+                {CyberData.map((item) => (
                     <div key={item.id} className='border-dotted border-2 border-[#16161626]'>
                 <div className='w-full min-h-screen flex justify-center items-center'>
                     <div className='flex flex-col justify-center items-center'>
