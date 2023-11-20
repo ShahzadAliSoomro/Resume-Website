@@ -24,7 +24,7 @@ const softwareData = [
     {
         id: 5,
         title: 'Feature Section',
-        description: '',
+        description: 'Explain post-deployment support and maintenance services for government software applications.',
     },
     {
         id: 6,
