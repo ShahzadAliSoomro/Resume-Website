@@ -11,7 +11,7 @@ export default function GovtContract() {
             alt="resume"
             width={1200}
             height={1200}
-            className="w-full 2xl:h-[70vh] xl:h-[85vh] lg:h-[85vh] md:h-[50vh] h-[72vh] object-center"
+            className="w-full 2xl:h-[60vh] xl:h-[68vh] lg:h-[68vh] md:h-[43vh] h-[45vh] object-center"
           />
         </div>
       </div>
