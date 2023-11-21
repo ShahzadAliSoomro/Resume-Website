@@ -6,6 +6,12 @@ import { IoMenuOutline } from "react-icons/io5";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleDropdownItemClick = () => {
+    // Close the dropdown and hide the text when a dropdown item is clicked
+    setDropdownOpen(false);
+  };
   
 
   const handleLinkClick = () => {
@@ -23,11 +29,7 @@ export default function Navbar() {
           <div className="hidden md:flex gap-5 ">
             <div>
               <Link href="/">Home</Link>
-            </div>
-            {/* <div>
-              <Link href="/services">Services</Link>
-            </div> */}
-            
+            </div>  
               <div className="relative" data-te-dropdown-ref>
                 <Link
                   className="flex items-center whitespace-nowrap rounded  transition duration-150 ease-in-out"
@@ -38,6 +40,7 @@ export default function Navbar() {
                   aria-expanded="false"
                   data-te-ripple-init
                   data-te-ripple-color="light"
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
                 >
                   Services
                   <span className="ml-2 w-2">
@@ -56,16 +59,17 @@ export default function Navbar() {
                   </span>
                 </Link>
                 <ul
-                  className="absolute z-[1000] float-left mt-2 min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 "
-                  aria-labelledby="dropdownMenuButton2"
+ className={`absolute z-[1000] float-left mt-5 min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 ${
+  dropdownOpen ? "block" : "hidden"
+}`}                  aria-labelledby="dropdownMenuButton2"
                   data-te-dropdown-menu-ref
                 >
                   <li>
                     <Link
                      
-                      className="block w-full scroll-smooth duration-1000 whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                      href="#govt"
-
+                      className="block w-full scroll-smooth duration-200 whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                      href="#system-modernization"
+                      onClick={handleDropdownItemClick}
                       // as="/#govtcontract"
                       data-te-dropdown-item-ref
                     >
@@ -75,8 +79,9 @@ export default function Navbar() {
                   <li>
                     <Link
                       className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                      href="#"
+                      href="#cybersecurity-solutions"
                       data-te-dropdown-item-ref
+                      onClick={handleDropdownItemClick}
                     >
                       CyberSecurity Solutions
                     </Link>
@@ -86,6 +91,7 @@ export default function Navbar() {
                       className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
                       href="#"
                       data-te-dropdown-item-ref
+                      onClick={handleDropdownItemClick}
                     >
                       Cloud Computing Services
                     </Link>
@@ -95,7 +101,7 @@ export default function Navbar() {
            
 
             <div>
-              <Link href="/">Contact Us</Link>
+              <Link href="#contact-us">Contact Us</Link>
             </div>
           </div>
           <div>
