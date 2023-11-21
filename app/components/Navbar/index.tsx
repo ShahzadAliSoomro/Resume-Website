@@ -21,7 +21,7 @@ export default function Navbar() {
           </div>
           <div className="hidden md:flex gap-5 ">
             <div>
-              <Link href="/">About Us</Link>
+              <Link href="/">Home</Link>
             </div>
             <div>
               <Link href="/services">Services</Link>
@@ -29,6 +29,9 @@ export default function Navbar() {
             <div className="flex gap-1 justify-center items-center">
               <Link href="/">Solutions</Link>
               <IoIosArrowDown />
+            </div>
+            <div>
+              <Link href="/">Contact Us</Link>
             </div>
           </div>
           <div>
@@ -43,7 +46,7 @@ export default function Navbar() {
           <div className="md:hidden gap-5 flex flex-col text-white bg-black p-5 w-full absolute top-[66px] left-0 z-50">
             <div>
               <Link href="/" onClick={handleLinkClick}>
-                About Us
+                Home
               </Link>
             </div>
             <div>
@@ -56,6 +59,9 @@ export default function Navbar() {
                 Solutions
               </Link>
               <IoIosArrowDown />
+            </div>
+            <div>
+              <Link href="/">Contact Us</Link>
             </div>
           </div>
         )}
