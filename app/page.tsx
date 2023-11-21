@@ -19,7 +19,7 @@ export default function Home() {
         <div id="system-modernization">
           <FeatureSection />
         </div>
-        
+
         <SpecializingGovt />
         <Webflow />
         <div id="cybersecurity-solutions">
@@ -30,7 +30,9 @@ export default function Home() {
           <GovtContract />
         </div>
         <FaqSection />
-        <TeamSection />
+        <div id="cloud-computing-services">
+          <TeamSection />
+        </div>
       </div>
     </div>
   );
