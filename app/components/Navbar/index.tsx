@@ -6,6 +6,7 @@ import { IoMenuOutline } from "react-icons/io5";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  
 
   const handleLinkClick = () => {
     setOpen(false);
@@ -23,13 +24,76 @@ export default function Navbar() {
             <div>
               <Link href="/">Home</Link>
             </div>
-            <div>
+            {/* <div>
               <Link href="/services">Services</Link>
-            </div>
-            <div className="flex gap-1 justify-center items-center">
-              <Link href="/">Solutions</Link>
-              <IoIosArrowDown />
-            </div>
+            </div> */}
+            
+              <div className="relative" data-te-dropdown-ref>
+                <Link
+                  className="flex items-center whitespace-nowrap rounded  transition duration-150 ease-in-out"
+                  href="#"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-te-dropdown-toggle-ref
+                  aria-expanded="false"
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                >
+                  Services
+                  <span className="ml-2 w-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="h-5 w-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </Link>
+                <ul
+                  className="absolute z-[1000] float-left mt-2 min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 "
+                  aria-labelledby="dropdownMenuButton2"
+                  data-te-dropdown-menu-ref
+                >
+                  <li>
+                    <Link
+                     
+                      className="block w-full scroll-smooth duration-1000 whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                      href="#govt"
+
+                      // as="/#govtcontract"
+                      data-te-dropdown-item-ref
+                    >
+                      System Modernization
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      CyberSecurity Solutions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      Cloud Computing Services
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+           
+
             <div>
               <Link href="/">Contact Us</Link>
             </div>

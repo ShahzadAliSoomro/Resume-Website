@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 
+.scrol {
+    overflow-y: scroll;
+    
+}
