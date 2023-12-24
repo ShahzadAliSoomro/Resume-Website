@@ -61,7 +61,6 @@ export default function FaqSection() {
               <div className="w-full border-b-2 border-black pt-5"></div>
             </div>
           ))}
-
           <div className="flex flex-col gap-5 pt-10">
             <h4 className="text-2xl font-bold">Still have questions?</h4>
             <p>Contact us for more information.</p>
