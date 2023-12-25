@@ -25,7 +25,6 @@ export default function Home() {
         <div id="cybersecurity-solutions">
           <ProvidingSection />
         </div>
-
         <div id="contact-us">
           <GovtContract />
         </div>
