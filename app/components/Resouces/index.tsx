@@ -13,6 +13,7 @@ const ResoucesData = [
     description:
       "Present a comprehensive list of resources such as whitepapers, ebooks, guides, and reports that visitors can access.",
   },
+  
   {
     id: 3,
     title: "Featured Resources List Header Section",

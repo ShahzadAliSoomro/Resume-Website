@@ -37,6 +37,7 @@ export default function ProvidingSection() {
                   height={1200}
                   className="w-full"
                 />
+                
               </div>
             </div>
           </div>
